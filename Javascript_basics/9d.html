@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="js-textbox" placeholder="name"
+        onkeydown= "
+        if(event.key === 'Enter'){
+            const inputElement = document.querySelector('.js-textbox');
+            const name = inputElement.value;
+            document.querySelector('.js-para').innerHTML = `Your name is ${name}`;  
+        }">
+
+    <button onclick="
+        const inputElement = document.querySelector('.js-textbox');
+        const name = inputElement.value;
+        document.querySelector('.js-para').innerHTML = `Your name is ${name}`;  
+        ">Submit</button>
+
+    <p class="js-para"></p>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input class="js-textbox" placeholder="enter name" 
+        onkeydown="onKeydown()">
+    <button onclick="
+        display();
+        ">Submit</button>
+    <p class = "js-para"></p>
+
+    <script>
+        function onKeydown() {
+            console.log(event.key);
+
+            if(event.key === 'Enter'){
+                display();
+            }
+        }
+        function display() {
+            const inputElement = document.querySelector('.js-textbox');
+            const name = inputElement.value;
+            console.log(name);
+
+            document.querySelector('.js-para').innerHTML = `Your name is ${name}`;  
+        }  
+
+        
+    </script>
+</body>
+</html> -->

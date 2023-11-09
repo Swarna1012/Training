@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .toggle-button{
+            padding: 10px;
+            border: none;
+            font-size: 15px;
+        }
+
+        .is-toggled{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button class="js-game1 toggle-button"
+        onclick="const buttonElement = document.querySelector('.js-game1');
+        if(!(buttonElement.classList.contains('is-toggled')))
+            buttonElement.classList.add('is-toggled');
+        else 
+            buttonElement.classList.remove('is-toggled');"
+        >Gaming</button>
+
+    <button class="js-game2 toggle-button"
+        onclick="const buttonElement = document.querySelector('.js-game2');
+        if(!(buttonElement.classList.contains('is-toggled')))
+            buttonElement.classList.add('is-toggled');
+        else 
+            buttonElement.classList.remove('is-toggled');"
+        >Music</button>
+
+    <button class="js-game3 toggle-button"
+        onclick="const buttonElement = document.querySelector('.js-game3');
+        if(!(buttonElement.classList.contains('is-toggled')))
+            buttonElement.classList.add('is-toggled');
+        else 
+            buttonElement.classList.remove('is-toggled');"
+        >Tech</button>
+
+    <script>
+        function toggle() {
+            
+        }
+    </script>
+
+</body>
+</html>

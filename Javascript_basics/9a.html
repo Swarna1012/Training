@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Document</title>
+</head>
+<body>
+    <button>9a</button>
+    <button class="js-button" >9b</button>
+
+    <button onclick="document.querySelector('.js-display').innerHTML = 'You choose: Heads'">heads</button>
+    <button onclick="document.querySelector('.js-display').innerHTML = 'You choose: Tails'">tails</button>
+    <p class="js-display"></p>
+
+    <script>
+        console.log(document.querySelector('button'));
+        document.querySelector('.js-button').innerHTML = '9b done!';
+
+        
+    </script>
+    
+</body>
+</html>

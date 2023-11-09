@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //11a.
+        const myArray = [10, 20, 30];
+        myArray[2] = 99;
+        console.log(myArray);
+
+
+        //11b.
+        getLastValue();
+        function getLastValue(){
+            const array1 = ['hi', 'hello', 'good'];
+            lastIndex = array1.length-1;
+            console.log(array1[lastIndex]);
+        }
+
+
+        //11c.
+        const array2 = ['hi', 'hello', 'good'];
+        arraySwap(array2);
+        console.log(array2);
+        function arraySwap(array2){
+            let x = array2[0];
+            array2[0] = array2[array2.length-1];
+            array2[array2.length-1] = x;
+            return array2;
+        }
+
+
+        //11d.
+    </script>
+</body>
+</html>
